@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 function Universe() {
+    
+    const navigate = useNavigate(); // Initialize the hook
+
+    const handleSignupClick = () => {
+        navigate('/signup'); // Redirect to /signup when button is clicked
+    };
     return ( 
         <div className='container mt-5 mb-5'>
             <div className='row mt-5 text-center p-5'>
@@ -34,7 +41,7 @@ function Universe() {
                 <img src='media/dittoLogo.png'style={{width:"45%"}}></img>
                 <p className='text-small text-muted mt-3'>Insurance</p>
                 </div>
-                <button className='p-2 btn btn-primary fs-5 mb-5 mt-5' style={{width: "20%", margin: "0 auto"}}>Sign up Now</button>
+                <button className='p-2 btn btn-primary fs-5 mb-5 mt-5' style={{width: "20%", margin: "0 auto"}} onClick={handleSignupClick}>Sign up Now</button>
 
             </div>
             

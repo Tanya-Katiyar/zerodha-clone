@@ -29,7 +29,7 @@ root.render(
       <Route path="/product" element={<ProductPage />}></Route>
       <Route path="/pricing" element={<PricingPage />}></Route>
       <Route path="/support" element={<SupportPage />}></Route>
-      <Route path="/dashboard" element={<Dashboard />}></Route>
+      <Route path="/dashboard/*" element={<Dashboard />}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Routes>
     <Footer />
