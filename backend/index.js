@@ -23,6 +23,8 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
+app.options('*', cors()); 
+
 //creating a temporary model/object to pass the data 
 
 // app.get('/addHoldings', async(req, res)=>{
