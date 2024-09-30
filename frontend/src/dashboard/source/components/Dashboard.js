@@ -20,7 +20,7 @@ const Dashboard = () => {
   useEffect(() => {
     const checkAuth = async () => {
       const { data } = await axios.post(
-        "https://zerodhan-frontend.onrender.com",
+        "http://localhost:3002/",
         {},
         { withCredentials: true }
       );
