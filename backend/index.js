@@ -17,7 +17,7 @@ const uri = process.env.MONGO_URL;
 const app = express(); //creates a new application
 
 app.use(cors({
-  origin: ["https://stupendous-medovik-1aa0fd.netlify.app"],
+  origin: ["http://localhost:3000"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));

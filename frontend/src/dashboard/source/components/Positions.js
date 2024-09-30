@@ -7,7 +7,7 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect (()=> {
-    axios.get("https://zerodha-clone-jw0h.onrender.com/allPositions").then((res)=>{
+    axios.get("http://localhost:3002/allPositions").then((res)=>{
       console.log(res.data);
       setAllPositions(res.data);
     }) //get response from backend to frontend.
